@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+            margin-top: 50px;
+        }
+        .meme {
+            max-width: 80%;
+            height: auto;
+            border: 2px solid #ddd;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            margin: 20px auto;
+        }
+        .subreddit {
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enjoy Your Random Meme!</h1>
+        <img src="{{ meme_pic }}" alt="Random Meme" class="meme">
+        <p class="subreddit">Source: r/{{ subreddit }}</p>
+    </div>
+</body>
+</html>
